@@ -7,7 +7,7 @@ export class AppController {
 
   @HttpCode(HttpStatus.OK)
   @Get()
-  healthcheck(): string {
+  healthcheck() {
     return this.appService.getHealth();
   }
 }
