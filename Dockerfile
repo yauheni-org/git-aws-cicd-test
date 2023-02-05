@@ -6,6 +6,8 @@ WORKDIR /home/node
 
 COPY --chown=node:node . .
 
+RUN npm ci
+
 RUN npm run build \
     && npm prune --production
 
